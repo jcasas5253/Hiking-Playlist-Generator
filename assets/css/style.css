@@ -1,0 +1,18 @@
+body {
+    background: url(../images/hiking-main.jpg) no-repeat center center fixed;
+    background-image: url(../images/hiking-main.jpg);
+}
+#master {
+    width: 70%;
+}
+.content-holder {
+    margin: 0;
+    padding: 5px 30px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(236, 236, 228, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
