@@ -118,6 +118,13 @@ p {
     height: 580px;
 }
 
+.image:hover {
+    color: #26a69a;
+    box-shadow: 0 0 5px #26a69a;
+    text-shadow: 0 0 5px #26a69a;
+    border: 1px solid #26a69a; 
+}
+
 /* Media query for mobile responsive */
 @media screen and (max-width: 992px) {
     #trail-show {
