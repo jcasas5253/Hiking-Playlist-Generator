@@ -1,52 +1,61 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
-    <link href="dist/jquery.fatNav.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/fb844198fa.js" crossorigin="anonymous"></script>
-    <title>Hike Finder</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hiking Playlist Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 </head>
 
 <body>
+    <nav id="navBar">
+        <div class="nav-wrapper">
+            <div class="input-field">
+                <input id="search" type="search" placeholder="HIKING PLAYLIST GENERATOR (Enter Destination)" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </div>
+    </nav>
 
-    <div class="fat-nav">
-        <div class="fat-nav__wrapper">
-            <ul>
-                <li style="display:block;"><a style="color: mediumpurple;" href="index.html">Home</a></li>
-                <li style="display:block;"><a href="wedding-party.html">Wedding Party</a></li>
-                <li style="display:block;"><a href="photos.html">Photos</a></li>
-            </ul>
+    <div class="container">
+        <section id="search-section">
+            <h1>Hiking Playlist Generator</h1>
+            <h5>Enter Your Hiking Destination:</h5>
+            <form>
+                <input class="white" id="search2" type="search" placeholder="Enter City or Zip" required>
+                <button class="btn waves-effect waves-light searchBtn" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </section>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <p>Please enter valid 'City, State' or Zip Code</p>
+            </div>
+        </div>
+
+        <div id="trail-show" class="row">
+            <div id="music-show" class="col l6"></div>
         </div>
     </div>
 
-    <div class="container content-holder">
-        <h1 style="color: #555">Hike Finder</h1>
-        <p style="color: grey">Enter Your Hiking Destination!</p>
-        <input class="user-search" type="search" placeholder="Zip Code">
-        <button type="button" class="btn btn-success">Search <i class="fas fa-search"></i></button>
-    </div>
+    <footer class="page-footer" id="footer">
+        © Copyright 2018 DEPORTIVO HAS A TALENT
+    </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->   
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script src="dist/jquery.fatNav.js"></script>
-    <script src="assets/javascript/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+
+
 </body>
 
 </html>
