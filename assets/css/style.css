@@ -1,13 +1,11 @@
 body {
     background: url(../images/hiking-main.jpg) no-repeat center center fixed;
     background-image: url(../images/hiking-main.jpg);
-}
-#master {
-    width: 70%;
+    font-family: 'Bitter', serif;
 }
 .content-holder {
     margin: 0;
-    padding: 5px 30px 30px;
+    padding: 10px 30px 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,4 +13,32 @@ body {
     background-color: rgb(236, 236, 228, 0.8);
     border-radius: 10px;
     text-align: center;
+    width: 40%;
+}
+.btn-success {
+    margin-left: 5px;
+}
+.fa-search {
+    margin-left: 5px;
+}
+.user-search {
+    border:none;
+    outline:none;
+    padding: 5px;
+}
+.hamburger__icon, .hamburger__icon:before, .hamburger__icon:after {
+    background-color: #fff !important;
+}
+.hamburger {
+    border-bottom-right-radius: 100%;
+    background-color: #28a745;
+    padding-right: 50px;
+}
+@media only screen and (max-width: 999px) {
+    .content-holder {
+        width: auto;
+    }
+    .btn-success {
+        margin-top: 10px;
+    }
 }

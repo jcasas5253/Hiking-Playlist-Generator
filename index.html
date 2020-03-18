@@ -9,25 +9,38 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <link href="dist/jquery.fatNav.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <script src="https://kit.fontawesome.com/fb844198fa.js" crossorigin="anonymous"></script>
     <title>Hike Finder</title>
 </head>
 
 <body>
 
-        <div class="container content-holder">
-            <h1>Hike Finder</h1>
-            <p>Enter Your Hiking Destination!</p>
-            <input type="search">
-            <button type="button" class="btn btn-success">Search</button>
+    <div class="fat-nav">
+        <div class="fat-nav__wrapper">
+            <ul>
+                <li style="display:block;"><a style="color: mediumpurple;" href="index.html">Home</a></li>
+                <li style="display:block;"><a href="wedding-party.html">Wedding Party</a></li>
+                <li style="display:block;"><a href="photos.html">Photos</a></li>
+            </ul>
         </div>
+    </div>
+
+    <div class="container content-holder">
+        <h1 style="color: #555">Hike Finder</h1>
+        <p style="color: grey">Enter Your Hiking Destination!</p>
+        <input class="user-search" type="search" placeholder="Zip Code">
+        <button type="button" class="btn btn-success">Search <i class="fas fa-search"></i></button>
+    </div>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="dist/jquery.fatNav.js"></script>
+    <script src="assets/javascript/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
